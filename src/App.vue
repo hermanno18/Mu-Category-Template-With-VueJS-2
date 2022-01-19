@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="p-0 m-0">
+      <Page/>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Page from "./components/Page.vue"
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Page
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@font-face {
+  font-family: Kohinoor_Bangla;
+  src: url(./assets/font/Kohinoor_Bangla/KohinoorBangla-Regular.otf);
+}
+
+*{
+  font-family: Kohinoor_Bangla;
+}
+.navBar{
+  background-color: #343232;
+}
+.section{
+  background-color: #F5FDFA;
+}
+
+.sideNav-userInfo {
+  background-image: linear-gradient(to bottom right, #EA12B0, #FFB40B);
 }
 </style>
